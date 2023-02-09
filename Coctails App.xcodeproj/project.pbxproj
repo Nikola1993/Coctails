@@ -18,7 +18,11 @@
 		933DC384299536490031C954 /* Coctails_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC383299536490031C954 /* Coctails_AppUITestsLaunchTests.swift */; };
 		933DC391299537750031C954 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC390299537750031C954 /* AppDelegate.swift */; };
 		933DC393299537F50031C954 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC392299537F50031C954 /* SceneDelegate.swift */; };
-		933DC395299539880031C954 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC394299539880031C954 /* Dashboard.swift */; };
+		933DC39C2995408D0031C954 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC39B2995408D0031C954 /* TabBarViewController.swift */; };
+		933DC39F299541090031C954 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC39E299541090031C954 /* HomeScreen.swift */; };
+		933DC3A2299541250031C954 /* AllCoctailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC3A1299541250031C954 /* AllCoctailsScreen.swift */; };
+		933DC3A5299541530031C954 /* FavouriteCoctailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC3A4299541530031C954 /* FavouriteCoctailsScreen.swift */; };
+		933DC3A82995590B0031C954 /* DetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC3A72995590B0031C954 /* DetailsScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +57,11 @@
 		933DC383299536490031C954 /* Coctails_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coctails_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		933DC390299537750031C954 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		933DC392299537F50031C954 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		933DC394299539880031C954 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		933DC39B2995408D0031C954 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		933DC39E299541090031C954 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		933DC3A1299541250031C954 /* AllCoctailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCoctailsScreen.swift; sourceTree = "<group>"; };
+		933DC3A4299541530031C954 /* FavouriteCoctailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteCoctailsScreen.swift; sourceTree = "<group>"; };
+		933DC3A72995590B0031C954 /* DetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,15 +112,14 @@
 		933DC360299536450031C954 /* Coctails App */ = {
 			isa = PBXGroup;
 			children = (
-				933DC361299536450031C954 /* Coctails_AppApp.swift */,
-				933DC363299536450031C954 /* ContentView.swift */,
-				933DC365299536480031C954 /* Assets.xcassets */,
-				933DC36A299536480031C954 /* Persistence.swift */,
-				933DC36C299536480031C954 /* Coctails_App.xcdatamodeld */,
+				933DC39A2995404A0031C954 /* TabBar */,
+				933DC39829953C090031C954 /* App */,
+				933DC39629953BF10031C954 /* Networking */,
+				933DC39729953BFA0031C954 /* Screens */,
+				933DC39929953C290031C954 /* DataBase */,
 				933DC367299536480031C954 /* Preview Content */,
-				933DC390299537750031C954 /* AppDelegate.swift */,
-				933DC392299537F50031C954 /* SceneDelegate.swift */,
-				933DC394299539880031C954 /* Dashboard.swift */,
+				933DC365299536480031C954 /* Assets.xcassets */,
+				933DC36C299536480031C954 /* Coctails_App.xcdatamodeld */,
 			);
 			path = "Coctails App";
 			sourceTree = "<group>";
@@ -140,6 +147,83 @@
 				933DC383299536490031C954 /* Coctails_AppUITestsLaunchTests.swift */,
 			);
 			path = "Coctails AppUITests";
+			sourceTree = "<group>";
+		};
+		933DC39629953BF10031C954 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		933DC39729953BFA0031C954 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				933DC39D299540F30031C954 /* Home */,
+				933DC3A0299541150031C954 /* AllCoctails */,
+				933DC3A3299541360031C954 /* FavouriteCoctails */,
+				933DC3A6299558FA0031C954 /* Details */,
+				933DC363299536450031C954 /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		933DC39829953C090031C954 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				933DC361299536450031C954 /* Coctails_AppApp.swift */,
+				933DC390299537750031C954 /* AppDelegate.swift */,
+				933DC392299537F50031C954 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		933DC39929953C290031C954 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				933DC36A299536480031C954 /* Persistence.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		933DC39A2995404A0031C954 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				933DC39B2995408D0031C954 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		933DC39D299540F30031C954 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				933DC39E299541090031C954 /* HomeScreen.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		933DC3A0299541150031C954 /* AllCoctails */ = {
+			isa = PBXGroup;
+			children = (
+				933DC3A1299541250031C954 /* AllCoctailsScreen.swift */,
+			);
+			path = AllCoctails;
+			sourceTree = "<group>";
+		};
+		933DC3A3299541360031C954 /* FavouriteCoctails */ = {
+			isa = PBXGroup;
+			children = (
+				933DC3A4299541530031C954 /* FavouriteCoctailsScreen.swift */,
+			);
+			path = FavouriteCoctails;
+			sourceTree = "<group>";
+		};
+		933DC3A6299558FA0031C954 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				933DC3A72995590B0031C954 /* DetailsScreen.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,12 +356,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				933DC39C2995408D0031C954 /* TabBarViewController.swift in Sources */,
+				933DC3A5299541530031C954 /* FavouriteCoctailsScreen.swift in Sources */,
 				933DC36B299536480031C954 /* Persistence.swift in Sources */,
+				933DC39F299541090031C954 /* HomeScreen.swift in Sources */,
+				933DC3A82995590B0031C954 /* DetailsScreen.swift in Sources */,
 				933DC364299536450031C954 /* ContentView.swift in Sources */,
 				933DC362299536450031C954 /* Coctails_AppApp.swift in Sources */,
+				933DC3A2299541250031C954 /* AllCoctailsScreen.swift in Sources */,
 				933DC391299537750031C954 /* AppDelegate.swift in Sources */,
 				933DC36E299536480031C954 /* Coctails_App.xcdatamodeld in Sources */,
-				933DC395299539880031C954 /* Dashboard.swift in Sources */,
 				933DC393299537F50031C954 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
