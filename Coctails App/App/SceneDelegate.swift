@@ -19,8 +19,6 @@ class SceneDelegate: NSObject, UIWindowSceneDelegate {
             let tabBarVC = TabBarViewController(homeNavigationController: homeNavigationVC,
                                                 allCoctailsNavigationController: allCoctailsNavigationVC,
                                                 favouriteNavigationController: favouriteNavigationVC)
-            
-            
             self.window = window
             window.rootViewController = tabBarVC
             window.makeKeyAndVisible()
