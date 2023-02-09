@@ -16,6 +16,9 @@
 		933DC378299536480031C954 /* Coctails_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC377299536480031C954 /* Coctails_AppTests.swift */; };
 		933DC382299536490031C954 /* Coctails_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC381299536490031C954 /* Coctails_AppUITests.swift */; };
 		933DC384299536490031C954 /* Coctails_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC383299536490031C954 /* Coctails_AppUITestsLaunchTests.swift */; };
+		933DC391299537750031C954 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC390299537750031C954 /* AppDelegate.swift */; };
+		933DC393299537F50031C954 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC392299537F50031C954 /* SceneDelegate.swift */; };
+		933DC395299539880031C954 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC394299539880031C954 /* Dashboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		933DC37D299536480031C954 /* Coctails AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coctails AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		933DC381299536490031C954 /* Coctails_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coctails_AppUITests.swift; sourceTree = "<group>"; };
 		933DC383299536490031C954 /* Coctails_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coctails_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		933DC390299537750031C954 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		933DC392299537F50031C954 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		933DC394299539880031C954 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,9 @@
 				933DC36A299536480031C954 /* Persistence.swift */,
 				933DC36C299536480031C954 /* Coctails_App.xcdatamodeld */,
 				933DC367299536480031C954 /* Preview Content */,
+				933DC390299537750031C954 /* AppDelegate.swift */,
+				933DC392299537F50031C954 /* SceneDelegate.swift */,
+				933DC394299539880031C954 /* Dashboard.swift */,
 			);
 			path = "Coctails App";
 			sourceTree = "<group>";
@@ -266,7 +275,10 @@
 				933DC36B299536480031C954 /* Persistence.swift in Sources */,
 				933DC364299536450031C954 /* ContentView.swift in Sources */,
 				933DC362299536450031C954 /* Coctails_AppApp.swift in Sources */,
+				933DC391299537750031C954 /* AppDelegate.swift in Sources */,
 				933DC36E299536480031C954 /* Coctails_App.xcdatamodeld in Sources */,
+				933DC395299539880031C954 /* Dashboard.swift in Sources */,
+				933DC393299537F50031C954 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

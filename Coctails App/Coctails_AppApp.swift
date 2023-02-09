@@ -10,11 +10,12 @@ import SwiftUI
 @main
 struct Coctails_AppApp: App {
     let persistenceController = PersistenceController.shared
+    @UIApplicationDelegateAdaptor var delegate: AppDelegate
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+//            ContentView()
+//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
