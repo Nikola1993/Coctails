@@ -9,7 +9,10 @@ import SwiftUI
 
 struct FavouriteCoctailsScreen: View {
     var body: some View {
-        Text("FavouriteCoctailsScreen")
+        BackgroundView {
+            Text("Favourite Coctails Screen")
+                .foregroundColor(.white)
+        }
     }
 }
 
