@@ -31,6 +31,7 @@
 		933DC3B92996471B0031C954 /* HomeScreenLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC3B82996471B0031C954 /* HomeScreenLoader.swift */; };
 		933DC3BB299647650031C954 /* CoctailDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC3BA299647650031C954 /* CoctailDetailsResponse.swift */; };
 		933DC3BE299648040031C954 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC3BD299648040031C954 /* APIConstants.swift */; };
+		933DC3C029965D130031C954 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC3BF29965D130031C954 /* URLRequest+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		933DC3B82996471B0031C954 /* HomeScreenLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenLoader.swift; sourceTree = "<group>"; };
 		933DC3BA299647650031C954 /* CoctailDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoctailDetailsResponse.swift; sourceTree = "<group>"; };
 		933DC3BD299648040031C954 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		933DC3BF29965D130031C954 /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				933DC3B02995AD9A0031C954 /* UIColor+Extensions.swift */,
+				933DC3BF29965D130031C954 /* URLRequest+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 				933DC3AC299562460031C954 /* URLSessionHTTPClient.swift in Sources */,
 				933DC364299536450031C954 /* ContentView.swift in Sources */,
 				933DC3B7299647050031C954 /* HomeScreenViewModel.swift in Sources */,
+				933DC3C029965D130031C954 /* URLRequest+Extensions.swift in Sources */,
 				933DC362299536450031C954 /* Coctails_AppApp.swift in Sources */,
 				933DC3A2299541250031C954 /* AllCoctailsScreen.swift in Sources */,
 				933DC391299537750031C954 /* AppDelegate.swift in Sources */,
