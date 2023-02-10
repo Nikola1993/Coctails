@@ -32,6 +32,12 @@
 		933DC3BB299647650031C954 /* CoctailDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC3BA299647650031C954 /* CoctailDetailsResponse.swift */; };
 		933DC3BE299648040031C954 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC3BD299648040031C954 /* APIConstants.swift */; };
 		933DC3C029965D130031C954 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC3BF29965D130031C954 /* URLRequest+Extensions.swift */; };
+		933DC3C329966AE40031C954 /* CoctailItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC3C229966AE40031C954 /* CoctailItemModel.swift */; };
+		933DC3C529966C6D0031C954 /* CoctailItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC3C429966C6D0031C954 /* CoctailItemView.swift */; };
+		933DC3C729966DE70031C954 /* MockCoctailItemModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC3C629966DE70031C954 /* MockCoctailItemModels.swift */; };
+		933DC3CA299674510031C954 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC3C9299674510031C954 /* ImageLoader.swift */; };
+		933DC3CC29967B900031C954 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC3CB29967B900031C954 /* ImageView.swift */; };
+		933DC3CE299681E30031C954 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC3CD299681E30031C954 /* Color+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +86,12 @@
 		933DC3BA299647650031C954 /* CoctailDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoctailDetailsResponse.swift; sourceTree = "<group>"; };
 		933DC3BD299648040031C954 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		933DC3BF29965D130031C954 /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
+		933DC3C229966AE40031C954 /* CoctailItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoctailItemModel.swift; sourceTree = "<group>"; };
+		933DC3C429966C6D0031C954 /* CoctailItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoctailItemView.swift; sourceTree = "<group>"; };
+		933DC3C629966DE70031C954 /* MockCoctailItemModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCoctailItemModels.swift; sourceTree = "<group>"; };
+		933DC3C9299674510031C954 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		933DC3CB29967B900031C954 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		933DC3CD299681E30031C954 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +148,7 @@
 				933DC39929953C290031C954 /* DataBase */,
 				933DC3AF2995AD7C0031C954 /* Extensions */,
 				933DC3BC299647F30031C954 /* Constants */,
+				933DC3C8299674410031C954 /* Comman */,
 				933DC367299536480031C954 /* Preview Content */,
 				933DC3AD299562C30031C954 /* Assets */,
 			);
@@ -220,6 +233,7 @@
 		933DC39D299540F30031C954 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				933DC3C129966A7D0031C954 /* Models */,
 				933DC3B5299646E40031C954 /* Loader */,
 				933DC39E299541090031C954 /* HomeScreen.swift */,
 				933DC3B6299647050031C954 /* HomeScreenViewModel.swift */,
@@ -264,6 +278,7 @@
 			children = (
 				933DC3B02995AD9A0031C954 /* UIColor+Extensions.swift */,
 				933DC3BF29965D130031C954 /* URLRequest+Extensions.swift */,
+				933DC3CD299681E30031C954 /* Color+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -272,6 +287,8 @@
 			isa = PBXGroup;
 			children = (
 				933DC3B3299642E70031C954 /* BackgroundView.swift */,
+				933DC3C429966C6D0031C954 /* CoctailItemView.swift */,
+				933DC3CB29967B900031C954 /* ImageView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -291,6 +308,23 @@
 				933DC3BD299648040031C954 /* APIConstants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		933DC3C129966A7D0031C954 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				933DC3C229966AE40031C954 /* CoctailItemModel.swift */,
+				933DC3C629966DE70031C954 /* MockCoctailItemModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		933DC3C8299674410031C954 /* Comman */ = {
+			isa = PBXGroup;
+			children = (
+				933DC3C9299674510031C954 /* ImageLoader.swift */,
+			);
+			path = Comman;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,23 +457,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				933DC3CC29967B900031C954 /* ImageView.swift in Sources */,
 				933DC3B4299642E70031C954 /* BackgroundView.swift in Sources */,
 				933DC39C2995408D0031C954 /* TabBarViewController.swift in Sources */,
 				933DC3A5299541530031C954 /* FavouriteCoctailsScreen.swift in Sources */,
+				933DC3C529966C6D0031C954 /* CoctailItemView.swift in Sources */,
 				933DC3AA299562360031C954 /* HTTPClient.swift in Sources */,
 				933DC36B299536480031C954 /* Persistence.swift in Sources */,
+				933DC3CE299681E30031C954 /* Color+Extensions.swift in Sources */,
 				933DC3BE299648040031C954 /* APIConstants.swift in Sources */,
 				933DC3BB299647650031C954 /* CoctailDetailsResponse.swift in Sources */,
 				933DC39F299541090031C954 /* HomeScreen.swift in Sources */,
+				933DC3C729966DE70031C954 /* MockCoctailItemModels.swift in Sources */,
 				933DC3B92996471B0031C954 /* HomeScreenLoader.swift in Sources */,
 				933DC3A82995590B0031C954 /* DetailsScreen.swift in Sources */,
 				933DC3AC299562460031C954 /* URLSessionHTTPClient.swift in Sources */,
 				933DC364299536450031C954 /* ContentView.swift in Sources */,
+				933DC3CA299674510031C954 /* ImageLoader.swift in Sources */,
 				933DC3B7299647050031C954 /* HomeScreenViewModel.swift in Sources */,
 				933DC3C029965D130031C954 /* URLRequest+Extensions.swift in Sources */,
 				933DC362299536450031C954 /* Coctails_AppApp.swift in Sources */,
 				933DC3A2299541250031C954 /* AllCoctailsScreen.swift in Sources */,
 				933DC391299537750031C954 /* AppDelegate.swift in Sources */,
+				933DC3C329966AE40031C954 /* CoctailItemModel.swift in Sources */,
 				933DC3B12995AD9A0031C954 /* UIColor+Extensions.swift in Sources */,
 				933DC36E299536480031C954 /* Coctails_App.xcdatamodeld in Sources */,
 				933DC393299537F50031C954 /* SceneDelegate.swift in Sources */,

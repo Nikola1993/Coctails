@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeScreen: View {
     
-    private let viewModel: HomeScreenViewModel
+    @ObservedObject private var viewModel: HomeScreenViewModel
     
     init(viewModel: HomeScreenViewModel) {
         self.viewModel = viewModel
@@ -17,8 +17,11 @@ struct HomeScreen: View {
     
     var body: some View {
         BackgroundView {
-            Text("Home Screen")
-                .foregroundColor(.white)
+            ScrollView {
+                ForEach(viewModel.coctails) { coctail in
+                    CoctailItemView(model: coctail)
+                }
+            }
         }
         .onAppear {
             viewModel.getLates()
@@ -28,7 +31,8 @@ struct HomeScreen: View {
 
 struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
-        HomeScreen(viewModel: HomeScreenViewModel(loader: StubHomeScreenLoader()))
+        HomeScreen(viewModel: HomeScreenViewModel(loader: StubHomeScreenLoader(),
+                                                  coctails: MockCoctailItemModels.items))
     }
     
     private class StubHomeScreenLoader: HomeScreenLoader {
