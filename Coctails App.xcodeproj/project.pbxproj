@@ -27,6 +27,10 @@
 		933DC3AC299562460031C954 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC3AB299562460031C954 /* URLSessionHTTPClient.swift */; };
 		933DC3B12995AD9A0031C954 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC3B02995AD9A0031C954 /* UIColor+Extensions.swift */; };
 		933DC3B4299642E70031C954 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC3B3299642E70031C954 /* BackgroundView.swift */; };
+		933DC3B7299647050031C954 /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC3B6299647050031C954 /* HomeScreenViewModel.swift */; };
+		933DC3B92996471B0031C954 /* HomeScreenLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC3B82996471B0031C954 /* HomeScreenLoader.swift */; };
+		933DC3BB299647650031C954 /* CoctailDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC3BA299647650031C954 /* CoctailDetailsResponse.swift */; };
+		933DC3BE299648040031C954 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933DC3BD299648040031C954 /* APIConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +74,10 @@
 		933DC3AB299562460031C954 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		933DC3B02995AD9A0031C954 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		933DC3B3299642E70031C954 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		933DC3B6299647050031C954 /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
+		933DC3B82996471B0031C954 /* HomeScreenLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenLoader.swift; sourceTree = "<group>"; };
+		933DC3BA299647650031C954 /* CoctailDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoctailDetailsResponse.swift; sourceTree = "<group>"; };
+		933DC3BD299648040031C954 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +133,7 @@
 				933DC39729953BFA0031C954 /* Screens */,
 				933DC39929953C290031C954 /* DataBase */,
 				933DC3AF2995AD7C0031C954 /* Extensions */,
+				933DC3BC299647F30031C954 /* Constants */,
 				933DC367299536480031C954 /* Preview Content */,
 				933DC3AD299562C30031C954 /* Assets */,
 			);
@@ -209,7 +218,9 @@
 		933DC39D299540F30031C954 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				933DC3B5299646E40031C954 /* Loader */,
 				933DC39E299541090031C954 /* HomeScreen.swift */,
+				933DC3B6299647050031C954 /* HomeScreenViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -260,6 +271,23 @@
 				933DC3B3299642E70031C954 /* BackgroundView.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		933DC3B5299646E40031C954 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				933DC3B82996471B0031C954 /* HomeScreenLoader.swift */,
+				933DC3BA299647650031C954 /* CoctailDetailsResponse.swift */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		933DC3BC299647F30031C954 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				933DC3BD299648040031C954 /* APIConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,10 +425,14 @@
 				933DC3A5299541530031C954 /* FavouriteCoctailsScreen.swift in Sources */,
 				933DC3AA299562360031C954 /* HTTPClient.swift in Sources */,
 				933DC36B299536480031C954 /* Persistence.swift in Sources */,
+				933DC3BE299648040031C954 /* APIConstants.swift in Sources */,
+				933DC3BB299647650031C954 /* CoctailDetailsResponse.swift in Sources */,
 				933DC39F299541090031C954 /* HomeScreen.swift in Sources */,
+				933DC3B92996471B0031C954 /* HomeScreenLoader.swift in Sources */,
 				933DC3A82995590B0031C954 /* DetailsScreen.swift in Sources */,
 				933DC3AC299562460031C954 /* URLSessionHTTPClient.swift in Sources */,
 				933DC364299536450031C954 /* ContentView.swift in Sources */,
+				933DC3B7299647050031C954 /* HomeScreenViewModel.swift in Sources */,
 				933DC362299536450031C954 /* Coctails_AppApp.swift in Sources */,
 				933DC3A2299541250031C954 /* AllCoctailsScreen.swift in Sources */,
 				933DC391299537750031C954 /* AppDelegate.swift in Sources */,

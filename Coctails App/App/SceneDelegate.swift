@@ -27,9 +27,14 @@ class SceneDelegate: NSObject, UIWindowSceneDelegate {
         }
     }
     
-    private var homeNavigationVC: UINavigationController = {
+    private lazy var urlSessionClient: HTTPClient = {
+        return URLSessionHTTPClient(session: .shared)
+    }()
+    
+    private lazy var homeNavigationVC: UINavigationController = {
         let homeNavigationController = UINavigationController()
-        let homeScreen = HomeScreen()
+        let homeScreenService = HomeScreenService(client: urlSessionClient)
+        let homeScreen = HomeScreen(viewModel: HomeScreenViewModel(loader: homeScreenService))
         let homeVC = UIHostingController(rootView: homeScreen)
         homeNavigationController.navigationBar.prefersLargeTitles = true
         homeNavigationController.setViewControllers([homeVC], animated: false)
@@ -37,7 +42,7 @@ class SceneDelegate: NSObject, UIWindowSceneDelegate {
         return homeNavigationController
     }()
     
-    private var allCoctailsNavigationVC: UINavigationController = {
+    private lazy var allCoctailsNavigationVC: UINavigationController = {
         let allCoctailsNavigationController = UINavigationController()
         let allCoctailScreen = AllCoctailsScreen()
         let allCoctailVC = UIHostingController(rootView: allCoctailScreen)
@@ -47,7 +52,7 @@ class SceneDelegate: NSObject, UIWindowSceneDelegate {
         return allCoctailsNavigationController
     }()
     
-    private var favouriteNavigationVC: UINavigationController = {
+    private lazy var favouriteNavigationVC: UINavigationController = {
         let favouriteNavigationController = UINavigationController()
         let favouriteScreen = FavouriteCoctailsScreen()
         let favouriteVC = UIHostingController(rootView: favouriteScreen)
